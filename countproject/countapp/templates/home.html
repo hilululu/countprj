@@ -1,0 +1,40 @@
+<style>
+    *{
+        width: 300px;    
+    }
+    .bt{
+        color: antiquewhite;
+        background-color:indigo;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+   textarea{
+       border-color: blueviolet;
+   }
+   h1{
+        color:blueviolet;
+        font-family:Helvetica;
+        font-weight:800;
+   }
+   
+</style>
+<div>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+
+    <body>       
+        <h1>WORD COUNT</h1>
+
+        <a href="{%url 'about'%}">about</a>
+
+        <form action="{%url 'result'%}">
+            <textarea col="40" rows="10" name="fulltext"></textarea>
+            <br><br>
+            <input class="bt" type="submit" value="count!">     
+        </form>
+
+        
+    </body>
+
+</div>

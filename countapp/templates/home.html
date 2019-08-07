@@ -1,0 +1,64 @@
+<style>
+    * {
+        
+        background-color: rgba(228, 168, 252, 0.973);
+        background-size: cover;
+    }
+
+    .bt {
+        color: antiquewhite;
+        background-color: lightsalmon;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 auto;
+    }
+
+    textarea {
+        width: 600px;
+        height: 400px;
+        border-color: black;
+        color: white;
+        background-image: url('http://i.fltcdn.net/contents/1308/original_1431464548627_qk8ejxg8pvi.jpeg');
+    }
+
+    h1 {
+        color: black;
+        font-family: Helvetica;
+        font-weight: 800;
+        font-size: 50px;
+        
+
+    }
+
+   
+    .txt {
+        margin: 50px;
+        /* margin-left: 300px;
+        margin-top: 60px; */
+        text-align: center;
+        
+    }
+
+
+</style>
+
+
+
+<body>
+<div id="big">
+    <div class="txt">
+        <h1>감성영역 수행평가</h1>
+
+        <a href="{%url 'about'%}">about</a>
+
+        <form action="{%url 'result'%}">
+            <textarea col="40" rows="20" name="fulltext"></textarea>
+            <br><br>
+            <input class="bt" type="submit" value="count!">
+        </form>
+    </div>
+    </div>
+    <div>
+
+    </div>
+</body>
